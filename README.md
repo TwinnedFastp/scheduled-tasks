@@ -1,0 +1,1 @@
+将需要实现定时任务的模块引入到TimeTasks模块中，TimeTasks模块启动对应的SpringBoot后，就能实现对应模块中任何Service实现类中方法的定时任务。启动和关闭定时任务不需要关闭SpringBoot即可实现。
