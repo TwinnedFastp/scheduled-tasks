@@ -1,0 +1,17 @@
+# 服务端口
+server:
+  port: 8001
+# Spring配置
+spring:
+  application:
+    name: ScheduledTasks
+# 定时任务调度器配置
+task:
+  scheduler:
+    pool-size: 20                   # 核心线程池大小
+    thread-name-prefix: "scheduled-task-"  # 线程名称前缀
+    queue-capacity: 100             # 任务队列容量
+    keep-alive-seconds: 60          # 线程空闲存活时间
+    rejected-policy: "CALLER_RUNS"   # 任务拒绝策略
+    wait-for-tasks-to-complete-on-shutdown: true  # 关闭时等待任务完成
+    await-termination-seconds: 60   # 等待终止时间

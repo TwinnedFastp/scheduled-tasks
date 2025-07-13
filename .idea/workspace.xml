@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5fc9f47a-d31e-4828-b7fa-376f05e96f53" name="Changes" comment="修改请求风格" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Yaml File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/TimeTasks" />
+    <option name="ROOT_SYNC" value="SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="customMavenHome" value="D:\apache-maven-3.9.9" />
+        <option name="localRepository" value="D:\repository" />
+        <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
+        <option name="userSettingsFile" value="D:\apache-maven-3.9.9\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2zauRmvxWTc9PrNsrXnJRexPnkX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.ScheduledTasks [clean,install].executor": "Run",
+    "Maven.ScheduledTasks [clean].executor": "Run",
+    "Maven.ScheduledTasks [dependency:purge-local-repository].executor": "Run",
+    "Maven.ScheduledTasks [org.apache.maven.plugins:maven-clean-plugin:3.2.0:clean].executor": "Run",
+    "Maven.ScheduledTasks [org.apache.maven.plugins:maven-install-plugin:3.1.2:install].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.App.executor": "Run",
+    "Spring Boot.JobTaskApplication (1).executor": "Run",
+    "Spring Boot.JobTaskApplication.executor": "Run",
+    "Spring Boot.TimeTasksApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore_missing_gitignore": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/files",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code2\ScheduledTasks\TimeTasks\sql" />
+      <recent name="D:\code2\ScheduledTasks\TimeTasks\src\main\java\com\itzou\domain\page" />
+      <recent name="D:\code2\ScheduledTasks\TimeTasks\src\main\java\com\itzou\controller" />
+      <recent name="D:\code2\ScheduledTasks\TimeTasks\src\main\java\com\itzou\service\impl" />
+      <recent name="D:\code2\ScheduledTasks\TimeTasks\src\main\java\com\itzou\service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code2\ScheduledTasks\TimeTasks" />
+      <recent name="D:\code2\ScheduledTasks" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.itzou.domain" />
+      <recent name="com.itzou.domain.vo" />
+      <recent name="com.itzou.domain.bo" />
+      <recent name="com.itzou.mapper" />
+      <recent name="com.itzou.config" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn dependency:purge-local-repository" />
+      <command value="mvn clean install" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="TimeTasksApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="TimeTasks" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.itzou.TimeTasksApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="5fc9f47a-d31e-4828-b7fa-376f05e96f53" name="Changes" comment="" />
+      <created>1724303314622</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724303314622</updated>
+      <workItem from="1751981500550" duration="5634000" />
+      <workItem from="1752020112065" duration="1974000" />
+      <workItem from="1752022162048" duration="61000" />
+      <workItem from="1752022270085" duration="2398000" />
+      <workItem from="1752024838458" duration="467000" />
+      <workItem from="1752028064394" duration="622000" />
+      <workItem from="1752048006242" duration="125000" />
+      <workItem from="1752325595729" duration="2704000" />
+      <workItem from="1752369640636" duration="98000" />
+      <workItem from="1752369756887" duration="300000" />
+      <workItem from="1752392019130" duration="1880000" />
+      <workItem from="1752395915130" duration="453000" />
+      <workItem from="1752397229228" duration="1003000" />
+      <workItem from="1752398812135" duration="12000" />
+      <workItem from="1752411076325" duration="1397000" />
+      <workItem from="1752412787174" duration="1894000" />
+      <workItem from="1752414713065" duration="139000" />
+      <workItem from="1752414873061" duration="21000" />
+    </task>
+    <task id="LOCAL-00001" summary="定时任务">
+      <option name="closed" value="true" />
+      <created>1752023583091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752023583091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="定时任务">
+      <option name="closed" value="true" />
+      <created>1752024489302</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752024489302</updated>
+    </task>
+    <task id="LOCAL-00003" summary="改进日志">
+      <option name="closed" value="true" />
+      <created>1752025212038</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752025212038</updated>
+    </task>
+    <task id="LOCAL-00004" summary="最简化代码">
+      <option name="closed" value="true" />
+      <created>1752393575485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1752393575485</updated>
+    </task>
+    <task id="LOCAL-00005" summary="优化代码">
+      <option name="closed" value="true" />
+      <created>1752398025041</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1752398025041</updated>
+    </task>
+    <task id="LOCAL-00006" summary="修改请求风格">
+      <option name="closed" value="true" />
+      <created>1752413918460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1752413918460</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/TimeTasks" />
+    </ignored-roots>
+    <MESSAGE value="定时任务" />
+    <MESSAGE value="改进日志" />
+    <MESSAGE value="最简化代码" />
+    <MESSAGE value="优化代码" />
+    <MESSAGE value="修改请求风格" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改请求风格" />
+  </component>
+</project>

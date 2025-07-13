@@ -1,0 +1,168 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itzou</groupId>
+    <artifactId>ScheduledTasks</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <name>ScheduledTasks</name>
+    <url>http://maven.apache.org</url>
+    <modules>
+        <module>TimeTasks</module>
+        <module>task_test</module>
+    </modules>
+
+
+    <properties>
+        <java.version>17</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>3.0.2</spring-boot.version>
+        <lombok.version>1.18.28</lombok.version>
+        <mybatis-plus.version>3.5.4</mybatis-plus.version>
+        <hutool.version>5.8.25</hutool.version>
+        <hibernate-validator.version>8.0.2.Final</hibernate-validator.version>
+        <jakarta.validation-api.version>3.0.2</jakarta.validation-api.version>
+    </properties>
+
+    <!--依赖版本声明-->
+    <dependencyManagement>
+        <dependencies>
+
+            <!-- SpringBoot版本 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- lombok版本 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+            </dependency>
+            <!-- mybatis-plus版本 -->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <!-- Hutool 依赖 -->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <!-- 可根据需要调整版本号，这里使用较新的稳定版本 -->
+                <version>${hutool.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>${hibernate-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>jakarta.validation</groupId>
+                <artifactId>jakarta.validation-api</artifactId>
+                <version>${jakarta.validation-api.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- 插件 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                            <goal>build-info</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- 打包时跳过测试 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.2</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+            <!-- docker-maven-plugin-->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.2.2</version>
+                <configuration>
+                    <!-- Docker路径 -->
+                    <dockerHost>http://192.168.66.100:2375</dockerHost>
+                    <!-- Dockerfile定义 -->
+                    <baseImage>openjdk:17</baseImage>
+                    <!-- 作者 -->
+                    <maintainer>itbaizhan</maintainer>
+                    <resources>
+                        <resource>
+                            <!-- 复制jar包到docker容器指定目录 -->
+                            <targetPath>/</targetPath>
+                            <!-- 从哪个包拷贝文件，target包 -->
+                            <directory>${project.build.directory}</directory>
+                            <!-- 拷贝哪个文件 -->
+                            <include>${project.build.finalName}.jar</include>
+                        </resource>
+                    </resources>
+                    <workdir>/</workdir>
+                    <!-- 运行jar包的命令，配置定义为生产环境的nacos配置中心 -->
+                    <entryPoint>["java", "-jar",
+                        "${project.build.finalName}.jar","--spring.cloud.nacos.config.server-addr=192.168.66.100:8848"]
+                    </entryPoint>
+                    <forceTags>true</forceTags>
+                    <!-- 镜像名 -->
+                    <imageName>${project.artifactId}</imageName>
+                    <!-- 镜像版本 -->
+                    <imageTags>
+                        <imageTag>${project.version}</imageTag>
+                    </imageTags>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <!-- 依赖仓库路径 -->
+    <repositories>
+        <repository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+    </repositories>
+    <!-- 插件仓库路径 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>public</id>
+            <name>aliyun nexus</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>
